@@ -7,7 +7,7 @@ public class TypesConversion {
         int intVersion = 0;
         double realDoubleVersion = 0;
        try{
-           boolVersion = Boolean.parseBoolean(stringFormatResponse);
+           boolVersion = Boolean.parseBoolean(stringFormatResponse);//it's only "true", if we pass "true".
            intVersion = Integer.parseInt(stringFormatResponse);
            realDoubleVersion = Double.parseDouble(stringFormatResponse);
     }catch(NumberFormatException e){
