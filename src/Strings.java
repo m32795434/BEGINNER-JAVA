@@ -22,10 +22,27 @@ public class Strings {
         System.out.println("completeName2.equals(completeName) = " + equal);
 
         //LAMBDA EXPRESSIONS. Like Js arrow functions
+        //.TRANSFORM
         String drIzeComplete  = completeName.transform(n-> "Dr. "+ n);
         System.out.println("drIzeComplete = " + drIzeComplete);
-        //REPLACE> like .replaceAll in Js
-        String upDr = drIzeComplete.replace('r', 'R');
-        System.out.println("upDr = " + upDr);
+
+        //REPLACE> with '' or "";with "" is like .replaceAll in Js.
+        String upDrized = drIzeComplete.replace('r','R');
+        System.out.println("upDrized = " + upDrized);
+        
+        //ISEMPTY
+        String emptyStr = "";
+        boolean isempty = emptyStr.isEmpty();//or with .length()
+        System.out.println("isempty = " + isempty);
+
+        //ISBLANK -> MORE STRICT
+        String blankStr = "     ";
+        boolean isblank = blankStr.isBlank();
+        System.out.println("isblank = " + isblank);
+
+        //CONTAINS
+        System.out.println(blankStr.contains(" "));
+//.indexOf, .lastIndexOf, .substring, .charAt, .startsWith, .endsWith, .trim exist like in Js.
+
     }
 }
