@@ -15,7 +15,8 @@ public class UserLogin {
         String u = scanner.next();
         System.out.println("Insert your password");
         String p = scanner.next();
-        for(int i = 0; i < usernames.length; i++){
+        int length  = usernames.length;
+        for(int i = 0; i < length; i++){
         if(u.equals(usernames[i]) && p.equals(passwords[i])){
             System.out.println("LOGIN " + u + " ...");
             System.out.println("usernames[i] = " + usernames[i]);

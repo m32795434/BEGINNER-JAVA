@@ -48,16 +48,12 @@ public class Strings {
         String car = "OVV915";
         char[] carCharArray = car.toCharArray();//returns the object's hash
         System.out.println("carCharArray = " + carCharArray);
-        for(int i = 0; i<carCharArray.length; i++){
-            System.out.print(carCharArray[i]);
-        }
+        for (char c : carCharArray) System.out.print(c);
             System.out.println();
         //String[]
 String address = "Bolivia 556";
 //In a regex if we want to use the ".", we have to use "\\." or "[.]"; this for *all* the regex chars
         String[] addressSplited = address.split(" ");//return the hash
-        for(int i = 0; i<addressSplited.length; i++){
-            System.out.println(addressSplited[i]);
-        }
+        for (String s : addressSplited) System.out.println(s);
     }
 }
