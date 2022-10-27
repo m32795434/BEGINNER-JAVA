@@ -33,9 +33,10 @@ if(c.equals(charToFind)){
 for(String w:phraseArray){
     if(w.contains(charToFind)){
         contWord++;
+        int wordLenght = w.length();
         loop2:
-        for(int i=0;i<w.length();i++){
-            if(!(Character.toString(phrase.charAt(i)).equals(charToFind))){
+        for(int i=0;i<wordLenght;i++){
+            if(!(Character.toString(w.charAt(i)).equals(charToFind))){
                 continue loop2;//this is unnecessary if we write the if "backwards"
             }
             contChar++;
