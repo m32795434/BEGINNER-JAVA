@@ -18,8 +18,5 @@ public class GetClassExample {
         for(Method m: IntClass.getMethods()){
             System.out.println("m = " + m);
         }*/
-        for(Method m:IntClass.getMethods()){
-            System.out.println("m = " + m);
-        }
     }
 }
