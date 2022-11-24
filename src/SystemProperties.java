@@ -25,7 +25,7 @@ public class SystemProperties {
 
         //SETTING PROPERTIES
         try {
-            FileInputStream file = new FileInputStream("src/config.properties");
+            FileInputStream file = new FileInputStream("srcc/config.properties");
 
             p.load(file);//we have the (p) System Properties already. So load the news.
             p.setProperty("mi.propiedad.personalizada", "Mi nuevo valor");//we set another one
@@ -40,7 +40,9 @@ public class SystemProperties {
             System.getProperties().list(System.out);*/
 
         } catch (Exception  e) {//we manage all the Exceptions
-            throw new RuntimeException(e);
+            System.err.println(e);
+            System.exit(1);
+            //throw new RuntimeException(e);
         }
     }
 }
