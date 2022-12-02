@@ -1,7 +1,7 @@
 public class ExecutingAProcess {
     public static void main(String[] args) {
-        Runtime rt = Runtime.getRuntime();
-        Process processNotePad;
+        Runtime rt = Runtime.getRuntime();//Returns:the Runtime object (we obtain... not create) associated with the current Java application.
+        Process processNotePad;//create a native process and return an instance of a subclass of Process that can be used to control the process and obtain information about it.
 
         try{
             if(System.getProperty("os.name").toLowerCase().startsWith("windows")){
@@ -20,5 +20,4 @@ System.exit(1);
         }
         System.out.println("Editor closed");
         System.exit(0);
-    }
-}
+}}
