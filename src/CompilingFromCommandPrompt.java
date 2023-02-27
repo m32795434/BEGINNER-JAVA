@@ -6,7 +6,8 @@ public class CompilingFromCommandPrompt {
             System.exit(-1);
         }
         for(int i=0;i<length;i++){
-            System.out.println("arg nro ".concat(Integer.toString(i)).concat("= ").concat(args[i]));
+            System.out.println("arg nº ".concat(Integer.toString(i)).concat("= ").concat(args[i]));
         }
+        //javac filename -encoding utf8 --> to encode the file correctly
     }
 }

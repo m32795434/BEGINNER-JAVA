@@ -25,7 +25,7 @@ public class SystemEnvironmentVariables {
         System.out.println("THE SAME AS ABOVE: "+ varEnv.get("Path"));//case sensitive
         System.out.println(varEnv.get("NUMBER_OF_PROCESSORS"));
         System.out.println(System.getenv("MY_VARIABLE"));
-        //with setx we can set in console a new environment variable on Windows.
+        //with setx we can set in command Prompt a new environment variable on Windows.
         System.out.println(System.getenv("SALUDAR"));
     }
 }
